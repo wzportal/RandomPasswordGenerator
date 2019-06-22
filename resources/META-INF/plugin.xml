@@ -1,0 +1,45 @@
+<idea-plugin>
+    <id>com.wzportal.idea.tool</id>
+    <name>Random Password Generator</name>
+    <version>1.0</version>
+    <vendor email="215147092@qq.com" url="https://www.wzportal.com">Wenzheng Jiang</vendor>
+
+    <description><![CDATA[<br>
+      Random Password Generator: <br>
+      1. A - Z<br>
+      2. a - z<br>
+      3. 0 - 9<br>
+      4. !@#$%&*<br>
+      5. Character Number Support Customization<br>
+      <br>
+      Please visit the site www.wzportal.com for more info.<br>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      this is the first version. thanks for using it.<br>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="com.wzportal.idea.tool.action.PasswordGeneratorAction"
+                class="com.wzportal.idea.tool.action.PasswordGeneratorAction"
+                text="Random Password Generator"
+                description="Random Password Generator">
+            <add-to-group group-id="ToolsMenu" anchor="last"></add-to-group>
+        </action>
+    </actions>
+</idea-plugin>
