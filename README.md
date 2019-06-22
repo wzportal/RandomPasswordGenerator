@@ -1,2 +1,3 @@
 # RandomPasswordGenerator
-Random Password Generator
+Random Password Generator for IntelliJ IDEA
+
